@@ -1,0 +1,99 @@
+.App {
+  min-width: 1200px;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 150px 0;
+}
+
+.logo-container {
+  width: 400px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+}
+
+.based-on {
+  position: absolute;
+  top: 280px;
+
+  color: rgba(58, 58, 58, 0.7);
+}
+
+.content-container {
+  margin-left: 223px;
+}
+
+.metrics {
+  color: rgb(58, 58, 58);
+  font-size: 36px;
+}
+
+.metric {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.stores {
+  display: flex;
+  flex: 1;
+
+  margin-top: 50px;
+}
+
+.store-image {
+  width: 54px;
+}
+
+.award {
+  display: flex;
+  justify-content: space-between;
+
+  &:nth-child(1) {
+    margin-right: 39px;
+  }
+}
+
+.award-content {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+
+  color: rgba(58, 58, 58, 0.8);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.effect-target {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.effect {
+  opacity: 1;
+  transform: translateY(0%);
+
+  transition-property: opacity, transform;
+  transition-duration: 700ms;
+  transition-timing-function: ease-in-out;
+}
+
+.effect-delay-0 {
+  transition-delay: 0ms;
+}
+
+.effect-delay-100 {
+  transition-delay: 100ms;
+}
+
+.effect-delay-200 {
+  transition-delay: 200ms;
+}
